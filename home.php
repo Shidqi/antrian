@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Hair salon templates for mens hair cut service provider.">
     <meta name="keywords" content="hair salon website templates free download, html5 template, free responsive website templates, website layout,html5 website templates, template for website design, beauty HTML5 templates, cosmetics website templates free download">
-    <title>PT. Asli Isoae Solusine</title>
+    <title>PT. Primadelta Starlestari</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <a href="home.php"><img src="images/logo-c.png" alt="image" style="height:50px;"></a>
+                    <a href="home.php"><img src="images/logo-white.png" alt="image" style="height:50px;"></a>
                 </div>
                 <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
                     <div class="navigation">
