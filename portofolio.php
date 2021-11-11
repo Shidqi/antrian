@@ -49,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <a href="home.php"><img src="images/logo-white.png" alt="image" style="width:200px;height:70px;"></a>
+                <a href="home.php"><img src="images/logo-white.png" alt="image" style="height:50px;"></a>
                 </div>
                 <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
                     <div class="navigation">
