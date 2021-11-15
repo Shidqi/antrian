@@ -62,11 +62,11 @@
                                 <div class='row'>
                                     <div class='col-md-6'>
                                         <label class='control-label'>Nama pemesan</label>
-                                        <input type='text' name='nama' placeholder='' class='form-control' required>
+                                        <input type='text' name='nama' placeholder='Nama Lengkap Anda' class='form-control' required>
                                     </div>
 									<div class='col-md-6'>
                                         <label class='control-label'>No Telfon</label>
-                                        <input type='text' name='tlp' placeholder='' class='form-control' required>
+                                        <input type='text' name='tlp' placeholder='081xxxxxxxxx' class='form-control' required>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>Jenis Service</label>
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>E-mail</label>
-                                        <input type='text' name='email' placeholder='' class='form-control' required>
+                                        <input type='text' name='email' placeholder='yourname@mail.com' class='form-control' required>
                                     </div>
 									<div class='col-md-6'>
                                         <label class='control-label'>Detail Permasalahan Tambahan</label>
@@ -87,7 +87,7 @@
                                     </div>
                                    
                                     <div class='col-md-6'>
-                                        <label class='control-label'>STNK (Upload STNK dalam Bentuk gambar atau foto)</label>
+                                        <label class='control-label'>STNK (*Upload STNK dalam Bentuk gambar atau foto)</label>
                                         <input type="file" name="stnk">
                                     </div>
                                     </div>
