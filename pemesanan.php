@@ -109,7 +109,7 @@
                                     <div class='col-md-6'>
                                         <label class='control-label'>Jenis Service</label>
                                         <select class='form-control' name='service' required>
-                                            <option value='paketservicepenuh'>Service Full</option>
+                                            <option value='servicepenuh'>Service Full</option>
                                             <option value='gantioli'>Ganti Oli</option>
                                             <option value='gantiban'>Ganti Ban</option>
                                             <option value='gantipartlain'>Ganti Part Lain</option>
