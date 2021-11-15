@@ -92,7 +92,7 @@
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Sampaikan'>
+                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Daftar'>
                                         </div>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                 </div>
                 <?php
                     include "config.php";
-                        if($_POST['singlebutton']=="Sampaikan"){ 
+                        if($_POST['singlebutton']=="Daftar"){ 
                                 $sql="INSERT INTO tbl_pesanan (kd_pesanan, nama_pemesan, no_telfon_pemesan, email_pemesan, detail_pesanan) 
                                 VALUES ('', '$_POST[nama]', '$_POST[tlp]', '$_POST[email]', '$_POST[detail]')";
                                 mysqli_query($con, $sql);
