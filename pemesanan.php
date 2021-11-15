@@ -82,8 +82,8 @@
                                         <input type='text' name='email' placeholder='' class='form-control' required>
                                     </div>
 									<div class='col-md-6'>
-                                        <label class='control-label'>Detail Permasalahan</label>
-                                        <textarea class='form-control' name='detail' rows='6' placeholder=''></textarea>
+                                        <label class='control-label'>Detail Permasalahan Tambahan</label>
+                                        <textarea class='form-control' name='detail' rows='6' placeholder='Berikan tanda (-) jika tidak ada'></textarea>
                                     </div>
                                    
                                     <div class='col-md-6'>
