@@ -53,6 +53,44 @@
     <div class="content">
         <div class="container">
             <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <center><h1>Daftar Antrian Terdaftar Saat ini</h1><Center>
+                    <div class="sidenav">
+                    <?php
+                    include "config.php";
+                    date_default_timezone_set('Asia/Jakarta');
+                    $tah=date('Y');?>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class="row">
+                        <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+                            <table class='table'>
+                            <thead>
+                                <tr>                         
+                                    <th>No. Antrian</th>
+                                    <th>Nama Pendaftar</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                        <?php
+                        $sql="SELECT * FROM tbl_projek";
+                        $content=mysqli_query($con, $sql);
+                        $i=1;
+                        while ($data=mysqli_fetch_row($content)) {
+                            echo "<tr>";
+                            echo "<td>$data[0]</td>";
+                            echo "<td>$data[1]</td>";
+                            echo "</tr>";
+                            $i++;
+                        }
+                        echo "</tbody>";
+                        echo "</table>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                    
+                ?>
+                    </div>                    
+                </div>
             <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
         <div class='row'>
             <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
