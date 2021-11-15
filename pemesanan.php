@@ -77,14 +77,15 @@
                                             <option value='gantipartlain'>Ganti Part Lain</option>
                                         </select>
                                     </div>
-									<div class='col-md-6'>
-                                        <label class='control-label'>Detail Permasalahan</label>
-                                        <textarea class='form-control' name='detail' rows='6' placeholder=''></textarea>
-                                    </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>E-mail</label>
                                         <input type='text' name='email' placeholder='' class='form-control' required>
                                     </div>
+									<div class='col-md-6'>
+                                        <label class='control-label'>Detail Permasalahan</label>
+                                        <textarea class='form-control' name='detail' rows='6' placeholder=''></textarea>
+                                    </div>
+                                   
                                     <div class='col-md-6'>
                                         <label class='control-label'>STNK (Upload STNK dalam Bentuk gambar atau foto)</label>
                                         <input type="file" name="stnk">
