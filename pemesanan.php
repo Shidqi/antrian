@@ -110,7 +110,7 @@
                                 include("emailnotifikasipemesanan.php");
                                 ?>
                                 <script type='text/javascript' language='JavaScript'>
-                                    alert('Pesanan anda berhasil terdaftar tunggu pihak kami menghubungi anda');
+                                    alert('Antrian berhasil dibuat');
                                 </script>
                                 <?php
                                 echo "<meta http-equiv='refresh' content='0'>";    
