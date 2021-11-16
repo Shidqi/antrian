@@ -72,7 +72,7 @@
                             </thead>
                         <tbody>
                         <?php
-                        $sql="SELECT * FROM tbl_projek";
+                        $sql="SELECT * FROM tbl_antrian";
                         $content=mysqli_query($con, $sql);
                         $i=1;
                         while ($data=mysqli_fetch_row($content)) {
@@ -126,7 +126,7 @@
                                    
                                     <div class='col-md-6'>
                                         <label class='control-label'>STNK (*Upload STNK dalam Bentuk gambar atau foto)</label>
-                                        <input type="file" name="stnk">
+                                        <input type="file" name="stnk" class='btn btn-primary' required>
                                     </div>
                                     </div>
                                     <div class='col-md-12'>
@@ -141,19 +141,24 @@
                 </div>
                 <?php
                     include "config.php";
+                    date_default_timezone_set('Asia/Jakarta');
+                    $tah=date('Y');
                         if($_POST['singlebutton']=="Daftar"){ 
-                                $sql="INSERT INTO tbl_pesanan (kd_pesanan, nama_pemesan, no_telfon_pemesan, email_pemesan, detail_pesanan) 
-                                VALUES ('', '$_POST[nama]', '$_POST[tlp]', '$_POST[email]', '$_POST[detail]')";
-                                mysqli_query($con, $sql);
-                                include("clientmail.php");
-                                include("emailnotifikasipemesanan.php");
-                                ?>
-                                <script type='text/javascript' language='JavaScript'>
-                                    alert('Antrian berhasil dibuat');
-                                </script>
-                                <?php
-                                echo "<meta http-equiv='refresh' content='0'>";    
-                        }
+                        $stnk = $_FILES['stnk']['name'];
+                        move_uploaded_file($_FILES['stnk']['tmp_name'], "stnk/".$_FILES['stnk']['name']);
+                        $sql="INSERT INTO tbl_antrian (id_antrian, nama, no_telfon, email, jenisservice, masalah, stnk) 
+                        VALUES ('', '$_POST[nama]', '$_POST[tlp]', '$_POST[email]', '$_POST[service]', 
+                        '$_POST[detail]', '$stnk')";
+                        mysqli_query($con, $sql);
+                        ?>
+                        <script type='text/javascript' language='JavaScript'>
+                        alert('Data pelamar terkirim silahkan tunggu pihak kami manghubungi');
+                        </script>
+                        <?php
+                        echo "<meta http-equiv='refresh' content='0'>";    
+                    }else if($_GET['menu']=='listprojek'){
+                        
+                    }
                 ?>
             </div>
         </div>
