@@ -24,7 +24,7 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <style>
     p {
-    color: white;
+    color: #FF0000;
     display: block;
     margin-bottom: 25px;
     margin-left: 25px;
@@ -32,11 +32,11 @@
     font-size: 25px;    
     }
     a {
-        color: white;
+        color: #FF0000;
         margin-top: 25px;
     }
     h1 {
-        color: white;
+        color: #FF0000;
     }
 </style>
 </head>
@@ -74,11 +74,10 @@
             <tbody>
             <tr>
             <td rowspan="2"><center><h1>Contact Us</h1><p>
-                PT. ASLI ISOAE SOLUSINE<br>
-                Jln. Raya Mochtar, Sawangan, Delissdin Green Residence Nomor : B6<br>
-                RT. 03 RW 01 Sawangan Lama, Sawangan<br>
-                Phone : 0857-7804-4429<br>
-                email : admin@asli.id</p></center></td>
+                PT. PRIMADELTA STARLESTARI<br>
+                Jalan Jenderal Ahmad Yani,  Mandala, Kaduagung Timur,<br> Kec. Rangkasbitung, Kabupaten Lebak,<br>
+                Banten 42317<br>
+                Phone : +6287772666767</p></center></td>
             </tr>
             </tbody>
             </table>
