@@ -163,7 +163,7 @@
                     include "config.php";
                     date_default_timezone_set('Asia/Jakarta');
                     $tah=date('Y');
-                        if($_POST['singlebutton']=="Daftar"){ 
+                        if($_POST['singlebutton']=="Daftar"){
                         $cv = $_FILES['cv']['name'];
                         move_uploaded_file($_FILES['cv']['tmp_name'], "cv/".$_FILES['cv']['name']);
                         $sql="INSERT INTO tbl_pelamar (kd_pelamar, nama_pelamar, no_telfon_pelamar, 
