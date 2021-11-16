@@ -152,7 +152,7 @@
                         mysqli_query($con, $sql);
                         ?>
                         <script type='text/javascript' language='JavaScript'>
-                        alert('Data pelamar terkirim silahkan tunggu pihak kami manghubungi');
+                        alert('Data Antrian Telah Terdaftar');
                         </script>
                         <?php
                         echo "<meta http-equiv='refresh' content='0'>";    
