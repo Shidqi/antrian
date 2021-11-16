@@ -8,5 +8,4 @@
             </ul>
         </li>
     <li class="active"><a href="kontak.php" title="">Contact Us</a></li>
-    <li class="active"><a href="karir.php?menu=karir" title="">Karir</a></li>
 </ul>

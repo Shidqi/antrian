@@ -126,7 +126,7 @@
                                    
                                     <div class='col-md-6'>
                                         <label class='control-label'>STNK (*Upload STNK dalam Bentuk gambar atau foto)</label>
-                                        <input type="file" name="stnk" class='btn btn-primary' required>
+                                        <input type="file" name="stnk" class='btn btn-primary' required/>
                                     </div>
                                     </div>
                                     <div class='col-md-12'>
