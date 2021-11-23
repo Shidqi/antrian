@@ -65,14 +65,14 @@
                         <?php
                             include "../config.php";
                             if($_POST['singlebutton']=="Simpan"){
-                                if($_POST[password1]==$_POST[password]||$_POST[password2]==$_POST[password]){
+                                if($_POST['password1']==$_POST['password']||$_POST['password2']==$_POST['password']){
                                 ?>
                                     <script type="text/javascript" language="JavaScript">
                                         alert('Password sudah ada');
                                     </script>
                                 <?php
                                 echo "<meta http-equiv='refresh' content='0'>";
-                               }else if($_POST[password1]!=$_POST[password2]){
+                               }else if($_POST['password1']!=$_POST['password2']){
                                 ?>
                                     <script type="text/javascript" language="JavaScript">
                                         alert('Sesuaikan Password Baru dengan Konfirmasi Password');
