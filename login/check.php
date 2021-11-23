@@ -1,19 +1,19 @@
 <?php
 //fungsi check.php ini adalah untuk mengecek data user yang ada dalam database agar bisa login ke halaman website.
 	session_start();
-	require_once "config.php";
+	require_once "../config.php";
 	if(ISSET($_POST['user']) && ISSET($_POST['password']))
   	{
       	$user=$_POST['user'];
       	$password=$_POST['password'];
       	$perintah="SELECT * FROM tbl_user 
-		  WHERE namauser='$user' AND password_karyawan='$password'";
+		  WHERE nama_user='$user' AND pass_user='$password'";
      	$hasil=mysqli_query($con, $perintah);
       	$jml_data=mysqli_num_rows($hasil);
 	  	if ($jml_data>0)
 	  	{
 
-	    	$_SESSION['user']=$user;
+	    	$_SESSION['type_user']=$user;
 	    	function sesi($user){
 	    		$usr=$user;
 	    		
@@ -22,11 +22,11 @@
 			
 			$akun=mysqli_fetch_row($hasil);
 			switch ($akun[3]) {
-				case 'Admin':
+				case 'super admin':
 					?>
 					<script type='text/javascript' language='JavaScript'>
 						alert('Anda Berhasil Masuk');
-						window.location.href="../admin/admin.php";
+						window.location.href="../sadmin/admin.php";
 					</script>
 					<?php
 				break;

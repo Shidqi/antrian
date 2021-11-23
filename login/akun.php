@@ -9,6 +9,8 @@
     <meta name="keywords" content="best free website templates, html5 template, free responsive website templates,website layout,html5 website templates,template for website design, medical HTML5 templates">
     <title>Akun</title>
     <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -24,35 +26,22 @@
     <![endif]-->
 </head>
 <body>
-    <div class="header">
+<div class="header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <a href="home.php"><img src="../images/logo-white.png" alt="image" style="width:200px;height:70px;"></a>
+                    <a href="../home.php"><img src="../images/logo-white.png" alt="image" style="height:50px;"></a>
                 </div>
                 <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
                     <div class="navigation">
                         <div id="navigation">
-                        <ul>
-                            <li class="active"><a href="../home.php" title="Beranda">Beranda</a></li>
-                                <li class="has-sub"><a href="../layanan.php" title="">Layanan</a>
-                                    <ul>
-                                        <li><a href="../pemesanan.php?menu=pesan" title="Katakan Kebutuhan Anda Sekarang">Hubungi Kami</a></li>
-                                    </ul>
-                                </li>
-                                <li class="active"><a href="../pengumuman.php" title="">Tentang Kami</a></li>
-                            <li class="active"><a href="../portofolio.php?menu=portofolio" title="">Portofolio</a></li>
-                            <li class="active"><a href="../kontak.php" title="">Contact Us</a></li>
-                            <li class="active"><a href="../karir.php?menu=karir" title="">Karir</a></li>
-                        </ul>
+                        <?php include 'nav.php';?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <link rel="stylesheet" type="text/css" href="../css/style1.css">
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
     <div class="content">
         <div class="container">
             <div class="col-md-offset-2 col-md-8">
@@ -70,7 +59,7 @@
                         <div class="form-input">
                             <input type="password" name="password" placeholder="Masukan Password" required="">
                         </div>
-                        <input type="submit" name="submit" class="btn-submit" value="Submit">
+                        <input type="submit" name="masuk" class='btn btn-primary' value="Masuk">
                     </form></center>
                 <br>
             </div>

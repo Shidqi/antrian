@@ -152,7 +152,7 @@
                         mysqli_query($con, $sql);
                         ?>
                         <script type='text/javascript' language='JavaScript'>
-                        alert('Data Antrian Telah Terdaftar');
+                        alert('Data Antrian Berhasil Di Daftarkan');
                         </script>
                         <?php
                         echo "<meta http-equiv='refresh' content='0'>";    

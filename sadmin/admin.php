@@ -4,7 +4,6 @@
   	error_reporting(0);
   	session_start();
   	$a=$_SESSION['user'];
-  	include "../akun/limited.php";
  ?>
 <head>
     <meta charset="utf-8">
