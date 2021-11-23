@@ -36,7 +36,7 @@
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                         <?php
                             include "../config.php";
-                            $perintah="SELECT * FROM tbl_user WHERE namauser='$a'";
+                            $perintah="SELECT * FROM tbl_user WHERE nama_user='$a'";
                             $hasil=mysqli_query($con, $perintah);
                             $data=mysqli_fetch_row($hasil);
                             if (! @$_POST['singlebutton']) 
@@ -57,7 +57,7 @@
                                 </div>
                                 <div class='col-md-12'>
                                     <div class='form-group'>
-                                        <input name='singlebutton' class='btn btn-default' type='submit' value='Simpan'>
+                                        <input name='singlebutton' class='btn btn-primary' type='submit' value='Simpan'>
                                     </div>
                                 </div>
                             </div>
@@ -65,14 +65,14 @@
                         <?php
                             include "../config.php";
                             if($_POST['singlebutton']=="Simpan"){
-                                if($_POST[password1]==$_POST[password]||$_POST[password2]==$_POST[password]){
+                                if($_POST['password1']==$_POST['password']||$_POST['password2']==$_POST['password']){
                                 ?>
                                     <script type="text/javascript" language="JavaScript">
                                         alert('Password sudah ada');
                                     </script>
                                 <?php
                                 echo "<meta http-equiv='refresh' content='0'>";
-                               }else if($_POST[password1]!=$_POST[password2]){
+                               }else if($_POST['password1']!=$_POST['password2']){
                                 ?>
                                     <script type="text/javascript" language="JavaScript">
                                         alert('Sesuaikan Password Baru dengan Konfirmasi Password');
@@ -81,9 +81,7 @@
                                 echo "<meta http-equiv='refresh' content='0'>";
                                }else{
                                     $var1=$_POST['password1'];
-                                    $var2=$_POST['password2'];
-                                    $var1=$var2;
-                                    $sql="UPDATE tbl_user SET password_karyawan='$var1' WHERE namauser='$a'";
+                                    $sql="UPDATE tbl_user SET pass_user='$var1' WHERE nama_user='$a'";
                                     mysqli_query($con, $sql);
                                     ?>
                                         <script type="text/javascript" language="JavaScript">

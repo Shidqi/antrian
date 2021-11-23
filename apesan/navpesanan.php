@@ -25,9 +25,6 @@
                                 <li><a href='listprojek.php'>Daftar Projek</a></li>
                                 <li class="has-sub"><a href="admin.php" title=""><?= $dataq[1]; ?></a>
                                     <ul>
-                                        <li><a href='listprojekview.php'>Lihat Projek</a></li>
-                                        <li><a href='listgajiview.php'>Riwayat Gaji</a></li>
-                                        <li><a href='listabsenview.php'>Riwayat Absensi</a></li>
                                         <li><a href='ubahpassword.php'>Ubah Password</a></li>
                                         <li><a href="../login/logout.php" title="Logout" onclick="return confirm('Apakah anda yakin ingin keluar ?')"> Logout</a></li>
                                     </ul>
