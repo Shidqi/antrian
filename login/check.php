@@ -13,7 +13,7 @@
 	  	if ($jml_data>0)
 	  	{
 
-	    	$_SESSION['type_user']=$user;
+	    	$_SESSION['user']=$user;
 	    	function sesi($user){
 	    		$usr=$user;
 	    		
@@ -74,7 +74,6 @@
 							window.location.href="editbiodata.php";
 						</script>
 						<?php
-					//header('location: editbiodata.php');
 				break;
 			}
 			
