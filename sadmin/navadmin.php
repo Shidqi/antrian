@@ -7,7 +7,7 @@
         include "../login/check.php";
         $a=$_SESSION['user'];
         include "limited.php";
-        $query="SELECT * FROM tbl_user WHERE namauser ='$a'";
+        $query="SELECT * FROM tbl_user WHERE nama_user ='$a'";
         $qwe=mysqli_query($con, $query);
         $dataq=mysqli_fetch_row($qwe);
     ?>

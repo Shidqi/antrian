@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <?php
   	error_reporting(0);
   	session_start();
@@ -82,4 +83,5 @@
     $(".input-group.date").datepicker({autoclose: true, todayHighlight: true});
     </script>
 </body>
+
 </html>
