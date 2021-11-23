@@ -41,7 +41,7 @@
     .bawah{
         padding-top: 60px; 
         padding-bottom: 60px;
-        background-color: #F6931E;
+        background-color: #ECE7E7;
     }
     a{
         color: black;
