@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pendaftaran SMP</title>
+	<title>Masuk Menu admin</title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css1/style1.css">
 	<link rel="stylesheet" type="text/css" href="../css1/font-awesome.css">
