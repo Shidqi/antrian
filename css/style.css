@@ -532,8 +532,8 @@ margin-bottom: 8px; padding: 0 0 8px 40px; color: #747474; }
 .sidenav { background-color: transparent; margin-bottom: 30px; }
 .sidenav li { position: relative; }
 .sidenav li:last-child { margin-bottom: 0px; }
-.sidenav li a { display: block; line-height: 14px; color: #000000; 
-    font-weight: 500; font-size: 14px; background-color: #697083; padding: 20px; margin-bottom: 1px; text-transform: uppercase;font-family: 'Montserrat', sans-serif;}
+.sidenav li a { display: block; line-height: 14px; color: #ECE7E7; 
+    font-weight: 500; font-size: 14px; background-color: #FF0000; padding: 20px; margin-bottom: 1px; text-transform: uppercase;font-family: 'Montserrat', sans-serif;}
 
 /*.sidenav li a:before { margin-right: 10px; font-family: FontAwesome; position: absolute; width: 20px; font-size: 12px; color: #7d7f89; content: "138"; left: 10px; }
 .sidenav li a:hover:before { color: #bb0349; }*/

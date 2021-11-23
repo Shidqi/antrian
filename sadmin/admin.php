@@ -44,7 +44,7 @@
         background-color: #ECE7E7;
     }
     a{
-        color: black;
+        color: #FF0000;
         margin-top: 25px;
     }
     </style>
