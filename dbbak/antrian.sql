@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2021 at 05:45 AM
+-- Generation Time: Nov 24, 2021 at 05:56 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -49,6 +49,31 @@ INSERT INTO `tbl_antrian` (`id_antrian`, `nama`, `no_telfon`, `email`, `jenisser
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_karyawan`
+--
+
+CREATE TABLE `tbl_karyawan` (
+  `id_karyawan` int(11) NOT NULL,
+  `nama_karyawan` varchar(50) NOT NULL,
+  `no_telfon_karyawan` int(15) NOT NULL,
+  `jk_karyawan` varchar(10) NOT NULL,
+  `alamat` text NOT NULL,
+  `email_karyawan` varchar(50) NOT NULL,
+  `jabatan_karyawan` varchar(30) NOT NULL,
+  `status_karyawan` varchar(20) NOT NULL,
+  `foto_karyawan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_karyawan`
+--
+
+INSERT INTO `tbl_karyawan` (`id_karyawan`, `nama_karyawan`, `no_telfon_karyawan`, `jk_karyawan`, `alamat`, `email_karyawan`, `jabatan_karyawan`, `status_karyawan`, `foto_karyawan`) VALUES
+(2, 'shisyfa', 987654321, 'Laki-Laki', 'rumah', 'shisyfa@email.com', 'teknisi', 'Pegawai Tetap', 'album.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_user`
 --
 
@@ -64,7 +89,8 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_user`, `pass_user`, `type_user`) VALUES
-(1, 'admin', 'admin', 'super admin');
+(1, 'admin', 'admin', 'super admin'),
+(3, 'shisyfa', 'shisyfa', 'karyawan baru');
 
 --
 -- Indexes for dumped tables
@@ -75,6 +101,12 @@ INSERT INTO `tbl_user` (`id_user`, `nama_user`, `pass_user`, `type_user`) VALUES
 --
 ALTER TABLE `tbl_antrian`
   ADD PRIMARY KEY (`id_antrian`);
+
+--
+-- Indexes for table `tbl_karyawan`
+--
+ALTER TABLE `tbl_karyawan`
+  ADD PRIMARY KEY (`id_karyawan`);
 
 --
 -- Indexes for table `tbl_user`
@@ -93,10 +125,16 @@ ALTER TABLE `tbl_antrian`
   MODIFY `id_antrian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `tbl_karyawan`
+--
+ALTER TABLE `tbl_karyawan`
+  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
