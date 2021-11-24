@@ -41,14 +41,13 @@ include "../config.php";
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                     <h1>Tambah Data Karyawan</h1>
-                    <button class='btn btn-default' onclick="goBack()"><-Go Back</button>
+                    <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
                     window.history.back();
                     }
                     </script>                    
                         <form method='post' action='prosestambahkar.php' enctype='multipart/form-data'>
-                        <input type='hidden' name='kd_pelamar' placeholder='' class='form-control' required>
                                     <div class='col-md-6'>
                                         <label class='control-label'>nama</label>
                                         <input type='text' name='nama' placeholder='' class='form-control' required>
@@ -56,15 +55,6 @@ include "../config.php";
                                     <div class='col-md-6'>
                                         <label class='control-label'>No. telfon</label>
                                         <input type='tel' name='notelfon' placeholder='' class='form-control' required>
-                                    </div>
-                                    <div class='col-md-6'>
-                                        <label class='control-label'>tanggal lahir*</label>
-                                        <div class='datepicker-center'>
-                                            <div class='input-group date ' data-date='' data-date-format='yyyy-mm-dd'>
-                                                <span class='input-group-addon'><i class='glyphicon glyphicon-calendar'></i></span>
-                                                <input class='form-control' type='text' name='tgl_regis' readonly='readonly'>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>jenis kelamin*</label>
@@ -95,11 +85,11 @@ include "../config.php";
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>Foto</label>
-                                        <input type="file" name="foto">
+                                        <input type="file" name="foto" class='btn btn-primary' require>
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='input' class='btn btn-default' type='submit' value='Tambahkan'>
+                                            <input name='input' class='btn btn-primary' type='submit' value='Tambahkan'>
                                         </div>
                                     </div>
                             </form>

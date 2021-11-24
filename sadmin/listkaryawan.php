@@ -26,7 +26,7 @@
 	<script type="../text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <style>
         td {
-            background-color: #F6931E;
+            background-color: #C7E7E7;
             color: black;
         }
         th {
@@ -66,10 +66,9 @@
                             <thead>
                                 <tr>                         
                                     <th>Nama</th>
-                                    <th>Tanggal Lahir</th>
+                                    <th>No Telfon</th>
                                     <th>Jenis Kelamin</th>
                                     <th>Alamat</th>
-                                    <th>No Telfon</th>
                                     <th>Email</th>
                                     <th>Jabatan</th>
                                     <th>Status</th>
@@ -88,11 +87,10 @@
                             echo "<td>$data[2]</td>";
                             echo "<td>$data[3]</td>";
                             echo "<td>$data[4]</td>";
+                            echo "<td>$data[5]</td>";
                             echo "<td>$data[6]</td>";
                             echo "<td>$data[7]</td>";
-                            echo "<td>$data[8]</td>";
-                            echo "<td>$data[9]</td>";
-                            echo "<td><img src='../foto/".$data[5]."' width='100'></td>";
+                            echo "<td><img src='../foto/".$data[8]."' width='100'></td>";
                             echo "<td><a href=\"formeditpegawai.php?id_karyawan=$data[0]\" >Ubah</a></td>";
                             echo "<td><a href=\"hapuskar.php?id_karyawan=$data[0]\" target='_blank' onclick=\"return confirm('Yakin Ingin Menghapus Data?')\">Hapus</a></td>";
                             echo "</tr>";
