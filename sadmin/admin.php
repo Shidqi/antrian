@@ -61,7 +61,6 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="sidenav">
                         <ul class="listnone">
-                            <li> <a href='listakun.php'>Daftar Akun</a></li>
                             <li> <a href='listkaryawan.php'>Daftar Karyawan</a></li>
                         </ul>
                     </div>                    
