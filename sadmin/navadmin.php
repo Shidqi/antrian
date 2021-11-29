@@ -21,8 +21,9 @@
                       <div class="navigation">
                         <div id="navigation">
                             <ul>
-                                    <li> <a href='listkaryawan.php'>Daftar Karyawan</a></li>
-                                <li class="has-sub"><a href="admin.php" title=""><?= $dataq[1]; ?></a>
+                                <li><a href='listpesanan.php'>Daftar Pesanan</a></li>
+                                <li><a href='listkaryawan.php'>Daftar Karyawan</a></li>
+                                    <li class="has-sub"><a href="admin.php" title=""><?= $dataq[1]; ?></a>
                                     <ul>
                                         <li><a href='ubahpassword.php'>Ubah Password</a></li>
                                         <li><a href="../login/logout.php" title="Logout" onclick="return confirm('Apakah anda yakin ingin keluar ?')"> Logout</a></li>
