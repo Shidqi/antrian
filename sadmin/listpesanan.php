@@ -57,11 +57,11 @@
                             <table class='table table-striped'>
                             <thead>
                                 <tr>                         
-                                    <th>Nama Pemesan</th>
+                                    <th>Nama</th>
                                     <th>No Telfon</th>
                                     <th>Email</th>
-                                    <th>Detail Pesanan</th>
-                                    <th colspan="2">Pilihan</th>
+                                    <th>Paket Service</th>
+                                    <th>Pilihan</th>
                                 </tr>
                             </thead>
                         <tbody>
@@ -75,8 +75,7 @@
                             echo "<td>$data[2]</td>";
                             echo "<td>$data[3]</td>";
                             echo "<td>$data[4]</td>";
-                            echo "<td><a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Terima</a></td>";
-                            echo "<td><a href=\"hapuspesanan.php?kd_pesanan=$data[0]\" target='_blank' onclick=\"return confirm('Yakin Tolak Pesanan?')\">Tolak</a></td>";
+                            echo "<td><a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Lihat</a></td>";
                             echo "</tr>";
                             $i++;
                         }
