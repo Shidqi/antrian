@@ -29,7 +29,7 @@ include "../config.php";
 <body>
 
     <?php
-    include "navpesanan.php";
+    include "navadmin.php";
     ?>
     <div class="content">
         <div class="container">
@@ -39,7 +39,7 @@ include "../config.php";
                     date_default_timezone_set('Asia/Jakarta');
                     $tah=date('Y');
                     $id = $_GET['kd_pesanan'];
-                    $query_mysql = mysqli_query($con, "SELECT * FROM tbl_pesanan WHERE kd_pesanan='$id'")or die(mysqli_error());
+                    $query_mysql = mysqli_query($con, "SELECT * FROM tbl_antrian WHERE id_antrian='$id'")or die(mysqli_error());
                     $nomor = 1;
                     while($data = mysqli_fetch_array($query_mysql)){?>
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
@@ -52,7 +52,7 @@ include "../config.php";
                     }
                     </script>                    
                         <form method='post' action='prosestambahpesanan.php'>
-                                    <input type='hidden' name='kd_pesanan' placeholder='' class='form-control' required <?php echo "value=$data[0]";?>>
+                                    <input type='hidden' name='id_antrian' placeholder='' class='form-control' required <?php echo "value=$data[0]";?>>
                                     <div class='col-md-6'>
                                         <label class='control-label'>nama projek</label>
                                         <input type='text' name='namaprojek' placeholder='' class='form-control' required>
