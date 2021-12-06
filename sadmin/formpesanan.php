@@ -45,7 +45,7 @@ include "../config.php";
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                     <h1>Lengkapi Data Pesanan</h1>
-                    <button class='btn btn-default' onclick="goBack()"><-Go Back</button>
+                    <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
                     window.history.back();
@@ -88,7 +88,7 @@ include "../config.php";
                                         <option value='-'>-</option>
                                             <?php
                                             include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
+                                            $sql="SELECT * FROM tbl_karyawan WHERE jabatan_karyawan='teknisi'";
                                             $hasil=mysqli_query($con,$sql);
                                             $no=0;
                                             while ($kar = mysqli_fetch_array($hasil)) {
@@ -110,181 +110,7 @@ include "../config.php";
                                             ?>
                                         </select>
                                     </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 1</label>
-                                        <select class="form-control" name="kar1">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 2</label>
-                                        <select class="form-control" name="kar2">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 3</label>
-                                        <select class="form-control" name="kar3">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 4</label>
-                                        <select class="form-control" name="kar4">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 5</label>
-                                        <select class="form-control" name="kar5">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Karyawan 6</label>
-                                        <select class="form-control" name="kar6">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                    <div class='col-md-6'>
+                                        <div class='col-md-6'>
                                         <label class='control-label'>Status Projek</label>
                                         <select class='form-control' name='sp' required>
                                             <option value='Proses'>Proses</option>
@@ -292,21 +118,12 @@ include "../config.php";
                                         </select>
                                     </div>
                                     <div class='col-md-6'>
-                                        <label class='control-label'>Deadline Projek</label>
-                                        <div class='datepicker-center'>
-                                            <div class='input-group date ' data-date='' data-date-format='yyyy-mm-dd'>
-                                                <span class='input-group-addon'><i class='glyphicon glyphicon-calendar'></i></span>
-                                                <input class='form-control' type='text' name='tgl_regis' readonly='readonly'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class='col-md-6'>
                                         <label class='control-label'>Biaya</label>
                                         <input type='text' name='biaya' placeholder='' class='form-control' required>
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='singlebutton' class='btn btn-default' type='submit' value='Tambahkan'>
+                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Tambahkan'>
                                         </div>
                                     </div>
                             </form>
