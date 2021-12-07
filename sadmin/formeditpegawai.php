@@ -45,7 +45,7 @@ include "../config.php";
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                     <h1>Edit Data Karyawan</h1>
-                    <button class='btn btn-default' onclick="goBack()"><-Go Back</button>
+                    <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
                     window.history.back();
@@ -59,16 +59,7 @@ include "../config.php";
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>No. telfon</label>
-                                        <input type='tel' name='notelfon' placeholder='' class='form-control' required <?php echo "value=$data[6]";?>>
-                                    </div>
-                                    <div class='col-md-6'>
-                                        <label class='control-label'>tanggal lahir*</label>
-                                        <div class='datepicker-center'>
-                                            <div class='input-group date ' data-date='' data-date-format='yyyy-mm-dd'>
-                                                <span class='input-group-addon'><i class='glyphicon glyphicon-calendar'></i></span>
-                                                <input class='form-control' type='text' name='tgl_regis' readonly='readonly' <?php echo "value=$data[2]";?>>
-                                            </div>
-                                        </div>
+                                        <input type='tel' name='notelfon' placeholder='' class='form-control' required <?php echo "value=$data[2]";?>>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>jenis kelamin*</label>
@@ -85,15 +76,15 @@ include "../config.php";
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>email</label>
-                                        <input type='tel' name='email' placeholder='' class='form-control' required <?php echo "value=$data[7]";?>>
+                                        <input type='tel' name='email' placeholder='' class='form-control' required <?php echo "value=$data[5]";?>>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>jabatan</label>
-                                        <input type='tel' name='jabatan' placeholder='' class='form-control' required <?php echo "value=$data[8]";?>>
+                                        <input type='tel' name='jabatan' placeholder='' class='form-control' required <?php echo "value=$data[6]";?>>
                                     </div>                                    
                                     <div class='col-md-6'>
                                         <label class='control-label'>status</label>
-                                        <?php $jk=$data[9]; ?>
+                                        <?php $jk=$data[7]; ?>
                                         <select class='form-control' name='status' required>
                                             <option value='Pegawai Tetap' <?php echo ($jk == 'Pegawai Tetap')?"selected":""?>>Pegawai Tetap</option>
                                             <option value='Magang' <?php echo ($jk == 'Magang')?"selected":""?>>Magang</option>
@@ -105,7 +96,7 @@ include "../config.php";
                                     </div>-->
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='singlebutton' class='btn btn-default' type='submit' value='Tambahkan'>
+                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Tambahkan'>
                                         </div>
                                     </div>
                             </form>

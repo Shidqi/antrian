@@ -22,7 +22,8 @@
                         <div id="navigation">
                             <ul>
                                 <li><a href='listpesanan.php'>Daftar Pesanan</a></li>
-                                <li><a href='listkaryawan.php'>Daftar Karyawan</a></li>
+                                <!--<li><a href='listkaryawan.php'>Daftar Karyawan</a></li>
+                                <li><a href='listakun.php'>Daftar Akun</a></li>-->
                                     <li class="has-sub"><a href="admin.php" title=""><?= $dataq[1]; ?></a>
                                     <ul>
                                         <li><a href='ubahpassword.php'>Ubah Password</a></li>

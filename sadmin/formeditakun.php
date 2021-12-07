@@ -45,7 +45,7 @@ include "../config.php";
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
                     <h1>Edit Data Akun</h1>
-                    <button class='btn btn-default' onclick="goBack()"><-Go Back</button>
+                    <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
                     window.history.back();
@@ -65,16 +65,13 @@ include "../config.php";
                                         <label class='control-label'>Tipe Akun</label>
                                         <?php $jk=$data[3]; ?>
                                         <select class='form-control' name='tipe' required>
-                                            <option value='Admin' <?php echo ($jk == 'Admin')?"selected":""?>>Admin IT</option>
-                                            <option value='Admin Pesan' <?php echo ($jk == 'Admin Pesan')?"selected":""?>>Admin Pemesanan</option>
-                                            <option value='HRD' <?php echo ($jk == 'HRD')?"selected":""?>>HRD</option>
-                                            <option value='Keuangan' <?php echo ($jk == 'Keuangan')?"selected":""?>>Keuangan</option>
-                                            <option value='Karyawan' <?php echo ($jk == 'Karyawan')?"selected":""?>>Karyawan</option>
+                                            <option value='super admin' <?php echo ($jk == 'super admin')?"selected":""?>>Super Admin</option>
+                                            <option value='teknisi' <?php echo ($jk == 'teknisi')?"selected":""?>>Teknisi</option>
                                         </select>
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='singlebutton' class='btn btn-default' type='submit' value='Tambahkan'>
+                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Tambahkan'>
                                         </div>
                                     </div>
                             </form>

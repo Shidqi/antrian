@@ -123,10 +123,9 @@
                                         <label class='control-label'>Detail Permasalahan Tambahan</label>
                                         <textarea class='form-control' name='detail' rows='6' placeholder='Berikan tanda (-) jika tidak ada'></textarea>
                                     </div>
-                                   
                                     <div class='col-md-6'>
-                                        <label class='control-label'>STNK (*Upload STNK dalam Bentuk gambar atau foto)</label>
-                                        <input type="file" name="stnk" class='btn btn-primary' required/>
+                                        <label class='control-label'>No. Polisi</label>
+                                        <input type='text' name='nopol' placeholder='A 1234 BC' class='form-control' required>
                                     </div>
                                     </div>
                                     <div class='col-md-12'>
@@ -144,11 +143,9 @@
                     date_default_timezone_set('Asia/Jakarta');
                     $tah=date('Y');
                         if($_POST['singlebutton']=="Daftar"){ 
-                        $stnk = $_FILES['stnk']['name'];
-                        move_uploaded_file($_FILES['stnk']['tmp_name'], "stnk/".$_FILES['stnk']['name']);
-                        $sql="INSERT INTO tbl_antrian (id_antrian, nama, no_telfon, email, jenisservice, masalah, stnk) 
+                        $sql="INSERT INTO tbl_antrian (id_antrian, nama, no_telfon, email, jenisservice, masalah, nopol) 
                         VALUES ('', '$_POST[nama]', '$_POST[tlp]', '$_POST[email]', '$_POST[service]', 
-                        '$_POST[detail]', '$stnk')";
+                        '$_POST[detail]', '$_POST[nopol]')";
                         mysqli_query($con, $sql);
                         ?>
                         <script type='text/javascript' language='JavaScript'>

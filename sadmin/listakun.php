@@ -26,7 +26,7 @@
 	<script type="../text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <style>
         td {
-            background-color: #F6931E;
+            background-color: #ECE7E7;
             color: black;
         }
         th {
