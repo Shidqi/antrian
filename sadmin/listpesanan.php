@@ -62,7 +62,7 @@
                                     <th>No Telfon</th>
                                     <th>Email</th>
                                     <th>Paket Service</th>
-                                    <th>Pilihan</th>
+                                    <th colspan="2">Pilihan</th>
                                 </tr>
                             </thead>
                         <tbody>
@@ -76,7 +76,8 @@
                             echo "<td>$data[2]</td>";
                             echo "<td>$data[3]</td>";
                             echo "<td>$data[4]</td>";
-                            echo "<td><a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Lihat</a></td>";
+                            echo "<td><a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Proses</a> || ";
+                            echo "<a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Lewati</a></td>";
                             echo "</tr>";
                             $i++;
                         }

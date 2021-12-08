@@ -67,7 +67,7 @@
                             </thead>
                         <tbody>
                         <?php
-                        $sql="SELECT * FROM tbl_projek";
+                        $sql="SELECT * FROM tbl_service";
                         $content=mysqli_query($con, $sql);
                         $i=1;
                         while ($data=mysqli_fetch_row($content)) {
