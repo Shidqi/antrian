@@ -44,7 +44,7 @@ include "../config.php";
                     while($data = mysqli_fetch_array($query_mysql)){?>
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                    <h1>Lengkapi Data Pesanan</h1>
+                    <h1>Lengkapi Data Service</h1>
                     <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
@@ -54,8 +54,8 @@ include "../config.php";
                         <form method='post' action='prosestambahpesanan.php'>
                                     <input type='hidden' name='id_antrian' placeholder='' class='form-control' required <?php echo "value=$data[0]";?>>
                                     <div class='col-md-6'>
-                                        <label class='control-label'>nama projek</label>
-                                        <input type='text' name='namaprojek' placeholder='' class='form-control' required>
+                                        <label class='control-label'>Tipe Kendaraan</label>
+                                        <input type='text' name='kendaraan' placeholder='' class='form-control' required>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>nama pemesan</label>
@@ -70,52 +70,22 @@ include "../config.php";
                                         <input type='text' name='nopemesan' placeholder='' class='form-control' required <?php echo "value=$data[2]";?>>
                                     </div>
                                     <div class='col-md-6'>
-                                        <label class='control-label'>Jenis Aplikasi</label>
-                                        <select class='form-control' name='ja' required>
-                                            <option value='Aplikasi Web'>Aplikasi Web</option>
-                                            <option value='Aplikasi Desktop'>Aplikasi Desktop</option>
-                                            <option value='Aplikasi Mobile'>Aplikasi Mobile</option>
+                                        <label class='control-label'>Jenis Service</label>
+                                        <?php $jk=$data[4]; ?>
+                                        <select class='form-control' name='service' required>
+                                            <option value='servicepenuh' <?php echo ($jk == 'servicepenuh')?"selected":""?>>Service Full</option>
+                                            <option value='gantioli' <?php echo ($jk == 'gantioli')?"selected":""?>>Ganti Oli</option>
+                                            <option value='gantiban' <?php echo ($jk == 'gantiban')?"selected":""?>>Ganti Ban</option>
+                                            <option value='gantipartlain' <?php echo ($jk == 'gantipartlain')?"selected":""?>>Ganti Part Lain</option>
                                         </select>
                                     </div>
                                     <div class='col-md-6'>
-                                        <label class='control-label'>Detail Pesanan</label>
-                                        <textarea class='form-control' name='detail' rows='6' placeholder='' ><?php echo "$data[4]";?></textarea>
+                                        <label class='control-label'>Detail Permasalahan Tambahan</label>
+                                        <textarea class='form-control' name='detail' rows='6' placeholder='' ><?php echo "$data[5]";?></textarea>
                                     </div>
-                                    <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="get">
-                                    <div class="col-md-6">
-                                    <label class='control-label'>Ketua Projek</label>
-                                        <select class="form-control" name="penanggungjawab">
-                                        <option value='-'>-</option>
-                                            <?php
-                                            include "../config.php";
-                                            $sql="SELECT * FROM tbl_karyawan WHERE jabatan_karyawan='teknisi'";
-                                            $hasil=mysqli_query($con,$sql);
-                                            $no=0;
-                                            while ($kar = mysqli_fetch_array($hasil)) {
-                                                $no++;
-
-                                                $ket="";
-                                                if (isset($_GET['id_karyawan'])) {
-                                                    $nik = trim($_GET['id_karyawan']);
-
-                                                    if ($nik==$kar['id_karyawan'])
-                                                    {
-                                                        $ket="selected";
-                                                    }
-                                                }
-                                                ?>
-                                                <option <?php echo $ket; ?> value="<?php echo $kar['nama_karyawan'];?>"><?php echo $kar['nama_karyawan'];?></option>
-                                                <?php
-                                            }
-                                            ?>
-                                        </select>
-                                    </div>
-                                        <div class='col-md-6'>
-                                        <label class='control-label'>Status Projek</label>
-                                        <select class='form-control' name='sp' required>
-                                            <option value='Proses'>Proses</option>
-                                            <option value='Done'>Done</option>
-                                        </select>
+                                    <div class='col-md-6'>
+                                        <label class='control-label'>Teknisi</label>
+                                        <input type='text' name='teknisi' placeholder='' class='form-control' required>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>Biaya</label>

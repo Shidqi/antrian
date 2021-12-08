@@ -52,7 +52,7 @@
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="row">
                         <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                        <h1>Daftar Pesanan Masuk</h1>
+                        <h1>Daftar Service Masuk</h1>
                         <p><a href="prosesresetpesanan.php">Reset Antrian</a></p>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <table class='table table-striped'>
