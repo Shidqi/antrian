@@ -88,6 +88,10 @@ include "../config.php";
                                         <input type='text' name='teknisi' placeholder='' class='form-control' required>
                                     </div>
                                     <div class='col-md-6'>
+                                        <label class='control-label'>No. Polisi</label>
+                                        <input type='text' name='nopol' placeholder='' class='form-control' required value="<?php echo $data[6];?>">
+                                    </div>
+                                    <div class='col-md-6'>
                                         <label class='control-label'>Biaya</label>
                                         <input type='text' name='biaya' placeholder='' class='form-control' required>
                                     </div>
