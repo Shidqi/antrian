@@ -44,53 +44,41 @@ text-transform: uppercase; }
                     include "../config.php";
                     date_default_timezone_set('Asia/Jakarta');
                     $tah=date('Y');
-                    $id = $_GET['kd_projek'];
-                    $query_mysql = mysqli_query($con, "SELECT * FROM tbl_projek WHERE kd_projek='$id'")or die(mysqli_error());
+                    $id = $_GET['id_service'];
+                    $query_mysql = mysqli_query($con, "SELECT * FROM tbl_service WHERE id_service='$id'")or die(mysqli_error());
                     $nomor = 1;
                     while($data = mysqli_fetch_array($query_mysql)){?>
                     <div class='col-lg-8 col-md-8 col-sm-8 col-xs-12'>
                     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                    <h1>Lihat Detail Projek</h1>
-                    <button class='btn btn-default' onclick="goBack()"><-Go Back</button>
+                    <h1>Detail Riwayat Service</h1>
+                    <button class='btn btn-primary' onclick="goBack()"><-Go Back</button>
                     <script>
                     function goBack() {
                     window.history.back();
                     }
                     </script>                    
                                     <br><p><input type='hidden' name='kd_projek' placeholder='' class='form-control' required value="<?php echo "$data[0]";?>">
-                                        <label>nama projek : </label>
+                                        <label>Jenis Kendaraan : </label>
                                         <label><?php echo "$data[1]";?></label><br>
-                                        <label>nama pemesan : </label>
+                                        <label>Nama Pemilik : </label>
                                         <label><?php echo "$data[2]";?></label><br>
-                                        <label>email pemesan : </label>
+                                        <label>No. Telfon Pemilik : </label>
                                         <label><?php echo "$data[3]";?></label><br>
-                                        <label>no. Telfon pemesan : </label>
+                                        <label>Email Pemilik : </label>
                                         <label><?php echo "$data[4]";?></label><br>
-                                        <label>Jenis Aplikasi : </label>
+                                        <label>Jenis Service : </label>
                                         <label><?php echo "$data[5]";?></label><br>
-                                        <label>Detail Pesanan : </label>
-                                        <label><?php echo "$data[6]";?></label><br>
-                                        <label>Ketua Projek : </label>
+                                        <label>No. Polisi : </label>
                                         <label><?php echo "$data[7]";?></label><br>
-                                        <label>Karyawan 1 : </label>
+                                        <label>Teknisi : </label>
                                         <label><?php echo "$data[8]";?></label><br>
-                                        <label>Karyawan 2 : </label>
+                                        <label>Tanggal Service : </label>
                                         <label><?php echo "$data[9]";?></label><br>
-                                        <label>Karyawan 3 : </label>
+                                        <label>Biaya Service : </label>
                                         <label><?php echo "$data[10]";?></label><br>
-                                        <label>Karyawan 4 : </label>
-                                        <label><?php echo "$data[11]";?></label><br>
-                                        <label>Karyawan 5 : </label>
-                                        <label><?php echo "$data[12]";?></label><br>
-                                        <label>Karyawan 6 : </label>
-                                        <label><?php echo "$data[13]";?></label><br>
-                                        <label>Status Projek : </label>
-                                        <label><?php echo "$data[14]";?></label><br>
-                                        <label>Deadline Projek : </label>
-                                        <label><?php echo "$data[15]";?></label><br>
-                                        <label>Biaya : </label>
-                                        <label><?php echo "$data[16]";?></label><br></p>
-                            <?php }?>
+                                        <label>Detail Service : </label>
+                                        <label><?php echo "$data[6]";?></label><br>
+                                <?php }?>
                         </div>
                 </div>
             </div>

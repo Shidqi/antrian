@@ -62,6 +62,7 @@
                     <div class="sidenav">
                         <ul class="listnone">
                             <li> <a href='listpesanan.php'>Daftar Pesanan</a></li>
+                            <li> <a href='listservice.php'>Catatan Service</a></li>
                             <!--<li> <a href='listkaryawan.php'>Daftar Karyawan</a></li>
                             <li><a href='listakun.php'>Daftar Akun</a></li>-->
                         </ul>

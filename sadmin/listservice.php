@@ -26,7 +26,7 @@
 	<script type="../text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <style>
         td {
-            background-color: #F6931E;
+            background-color: #ECE7E7;
             color: black;
         }
         th {
@@ -52,16 +52,16 @@
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                         <div class="row">
                         <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-                        <h1>Daftar Projek Yang di terima</h1>
+                        <h1>Riwayat Service</h1>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <table class='table'>
                             <thead>
                                 <tr>                         
-                                    <th>Nama Projek</th>
-                                    <th>Nama Pemesan</th>
-                                    <th>Penanggung Jawab</th>
-                                    <th>Deadline</th>
-                                    <th>Status</th>
+                                    <th>Nama Pemilik</th>
+                                    <th>Jenis Kendaraan</th>
+                                    <th>Teknisi</th>
+                                    <th>Tanggal Service</th>
+                                    <th>Jenis Service</th>
                                     <th>Pilihan</th>
                                 </tr>
                             </thead>
@@ -72,12 +72,12 @@
                         $i=1;
                         while ($data=mysqli_fetch_row($content)) {
                             echo "<tr>";
-                            echo "<td>$data[1]</td>";
                             echo "<td>$data[2]</td>";
-                            echo "<td>$data[7]</td>";
-                            echo "<td>$data[15]</td>";
-                            echo "<td>$data[14]</td>";
-                            echo "<td><a href=\"detailprojek.php?kd_projek=$data[0]\">Lihat</a></td>";
+                            echo "<td>$data[1]</td>";
+                            echo "<td>$data[8]</td>";
+                            echo "<td>$data[9]</td>";
+                            echo "<td>$data[5]</td>";
+                            echo "<td><a href=\"detailservice.php?id_service=$data[0]\">Lihat</a></td>";
                             echo "</tr>";
                             $i++;
                         }
