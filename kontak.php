@@ -85,7 +85,9 @@
             </left>
             </div>
         </div>
-    </div></center>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9431.195906951945!2d106.2275281764638!3d-6.3513806893414735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb215fa92844150bc!2sDEALER%20HONDA%20PT.%20PRIMADELTA%20STARLESTARI!5e0!3m2!1sid!2sid!4v1642142213300!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</center>
     
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

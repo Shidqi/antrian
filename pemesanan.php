@@ -55,6 +55,8 @@
             <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <center><h1>Daftar Antrian Terdaftar Saat ini</h1><Center>
+                <center><h3>Klik link di bawah untuk mengetahui posisi dimana alamat bengkel 
+                    <a href="https://g.page/HondaPSL?share" target="_blank"><u>link</u></a></h3></center>
                     <div class="sidenav">
                     <?php
                     include "config.php";
