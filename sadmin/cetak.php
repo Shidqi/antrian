@@ -39,37 +39,49 @@
                             include "../config.php";
                             date_default_timezone_set('Asia/Jakarta');
                             $tah=date('Y');
-                            $kd_gaji = $_GET['kd_gaji'];
-                            $perintah="SELECT * FROM tbl_gaji WHERE kd_gaji='$kd_gaji'";
+                            $id_service = $_GET['id_service'];
+                            $perintah="SELECT * FROM tbl_service WHERE id_service='$id_service'";
                             $hasil=mysqli_query($con, $perintah);
                             $data=mysqli_fetch_row($hasil);
                         ?>
-                    <center><img src="../images/logo-c.png"><h1>PT. Asli Isoae Solusine</h1></center>    
-                    <br><br><br><h1>Slip Gaji</h1>
+                    <center><img src="../images/logo-m.png"><h1>PT. PRIMADELTA STARLESTARI</h1></center>    
+                    <br><br><br><h1>Kwitansi Pembayaran</h1>
                     <form method='post' action=''>
                     <table>
                     <div class='row'>
                                 <div class='col-md-6'>
-                                    <label class='control-label'>Kode Gaji = </label>
-                                    <?php echo "GJK"."$data[0]"; ?>
-                                </div>
-                                <div class='col-md-6'>
                                     <label class='control-label'>Tanggal Pembayaran  = </label>
-                                    <?php echo "$data[1]"; ?>
+                                    <?php echo date('d F Y' ); ?>
                                 </div>
                                 <div class='col-md-6'>
                                     <label class='control-label'>Nama Lengkap = </label>
                                     <?php echo "$data[2]"; ?>
                                 </div>
                                 <div class='col-md-6'>
-                                    <label class='control-label'>Gaji = </label>
+                                    <label class='control-label'>No Telfon = </label>
                                     <?php echo "$data[3]"; ?>
+                                </div>
+                                <div class='col-md-6'>
+                                    <label class='control-label'>Jenis Service = </label>
+                                    <?php echo "$data[5]"; ?>
+                                </div>
+                                <div class='col-md-6'>
+                                    <label class='control-label'>No Polisi = </label>
+                                    <?php echo "$data[7]"; ?>
+                                </div>
+                                <div class='col-md-6'>
+                                    <label class='control-label'>Teknisi = </label>
+                                    <?php echo "$data[8]"; ?>
+                                </div>
+                                <div class='col-md-6'>
+                                    <label class='control-label'>Total Bayar = </label>
+                                    <?php echo "$data[10]"; ?>
                                 </div><br><br>
                                 <div class='col-md-6'>
-                                    <label class='control-label'><p>Depok, <?php echo date('d F Y' ); ?></p></label>
+                                    <label class='control-label'><p>Rangkasbitung, <?php echo date('d F Y' ); ?></p></label>
                                 </div><br>
                                 <div class='col-md-6'>
-                                    <label class='control-label'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edi Hermawan</p></label>
+                                    <label class='control-label'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Admin</p></label>
                                 </div>
                             </div>
                             </table>

@@ -59,7 +59,7 @@ include "../config.php";
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>nama pemesan</label>
-                                        <input type='text' name='namapemesan' placeholder='' class='form-control' required <?php echo "value=$data[1]";?>>
+                                        <input type='text' name='namapemesan' placeholder='' class='form-control' required value='<?php echo "$data[1]";?>'>
                                     </div>
                                     <div class='col-md-6'>
                                         <label class='control-label'>email pemesan</label>
@@ -97,7 +97,7 @@ include "../config.php";
                                     </div>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
-                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Tambahkan'>
+                                            <input name='singlebutton' class='btn btn-primary' type='submit' value='Daftar'>
                                         </div>
                                     </div>
                             </form>

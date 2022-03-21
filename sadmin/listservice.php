@@ -78,6 +78,7 @@
                             echo "<td>$data[9]</td>";
                             echo "<td>$data[5]</td>";
                             echo "<td><a href=\"detailservice.php?id_service=$data[0]\">Lihat</a></td>";
+                            echo "<td><a href=\"cetak.php?id_service=$data[0]\" target='_blank'>Cetak</a></td>";
                             echo "</tr>";
                             $i++;
                         }

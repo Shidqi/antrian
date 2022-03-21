@@ -77,7 +77,7 @@
                             echo "<td>$data[3]</td>";
                             echo "<td>$data[4]</td>";
                             echo "<td><a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Proses</a> || ";
-                            echo "<a href=\"formpesanan.php?kd_pesanan=$data[0]\" >Lewati</a></td>";
+                            echo "<a href=\"hapuspesanan.php?id_antrian=$data[0]\" >Lewati</a></td>";
                             echo "</tr>";
                             $i++;
                         }
